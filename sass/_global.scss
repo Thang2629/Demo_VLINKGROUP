@@ -1,0 +1,228 @@
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.wrapper{
+    min-height: 100vh;
+    margin: 0 auto;
+    &-heading{
+         background: linear-gradient(113.09deg, #F2D374 7.05%, #B88837 64.94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header .sticky{
+    background: $background-color;
+    padding: 15px 0;
+}
+@media screen and (min-width: 1230px) {
+    .container{
+        max-width: 1214px;
+    }
+}
+@media screen and (max-width: 1229px) {
+    .container{
+        max-width: 1095px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .container{
+        max-width: 980px;
+    }
+}
+
+body{
+    line-height: 1;
+    font-family: $font;
+    color: $text-color;
+    background: $background-color;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.button{
+    display: inline-block;
+    font-family: $font;
+    border-radius: 10px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    &--primary{
+        font-weight: 700;
+        color:$text-color;
+        background: linear-gradient(113.09deg, #F2D374 7.05%, #B88837 64.94%);
+    }
+    &--close{
+        font-size: 16px !important;
+        padding: 12px 20px !important;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .button{
+        padding: 21px 37px;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .button{
+        padding: 18px 34px;
+        font-size: 18px;
+    }
+}
+@media screen  and (max-width: 480px) {
+    .button{
+        padding: 14px 26px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .is-tablet{
+        display: none !important;
+    }
+    .is-mobile{
+        display: block !important;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .is-mobile{
+        display: none !important;
+    }
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F2F2F2;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #F2F2F2;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #F2F2F2;
+  }
+  select option{
+      background-color: #071B37;
+      line-height: 20px !important;
+      display: block;
+  }
+//   Slick ==============================
+.slick-dots{
+    list-style-type: none;
+    display:flex ;
+    align-items: center;
+    gap: 0 15px;
+    justify-content: center;
+    button{
+        font-size: 0;
+        background-color: #F3F5F6;
+        width: 15px;
+        height: 15px;
+        border-radius: 100rem;
+        transition: all 0.2s linear;
+        border: none;
+    }
+    .slick-active button{
+        background: linear-gradient(113.09deg, #F2D374 7.05%, #B88837 64.94%);
+    }
+}
+@media screen and (max-width: 767px) {
+    .slick-initialized .slick-slide{
+        display: flex ;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .slick-track{
+        display: flex;
+        gap: 0 30px;
+    }
+    .slick-dots{
+        margin-top: 30px;
+        justify-content: center;
+    }
+}
+.border-gradient{
+    font-family: $font;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    position: relative;
+    background-color: #061529;
+    &:before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        margin: -2px;
+        background-image: linear-gradient(to right top, #F2D374, #B88837);
+        border-radius: inherit;
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}
+.border-gradient a{
+    padding: 17px 24px;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(22 / 16);
+}
+.button-group{
+    display:flex;
+    justify-content: center;
+    gap: 0 100px;
+}
+.particles-js-canvas-el{
+    position: absolute;
+    max-height: 502px;
+}
+@media screen  and (max-width: 768px)
+{
+    .particles-js-canvas-el{
+        max-height: 320px;
+    }
+}
+.button_scroll2top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 46px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 43px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #dfba5f;
+    color: $background-color;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+#myBtn span{
+    font-size: 1.5rem;
+}
+#myBtn:hover {
+    background-color: $text-color;
+    color: $background-color;
+}
+@media screen and (max-width:480px) {
+    #myBtn{
+        left: 200px;
+    }
+}

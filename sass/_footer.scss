@@ -1,0 +1,182 @@
+.footer{
+    padding-top: 77px;
+    &-container{
+        display: grid;
+        grid-template-columns: 2.5fr 1.5fr 3fr;
+        grid-gap: 0 112px;
+    }
+    &-information{
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        margin-top: 28px
+    }
+    &-heading{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: calc(33 / 24);
+    }
+    &-links{
+        list-style-type: none;
+        margin-top: 30px;
+    }
+    &-item {
+        margin-bottom: 15px;
+    }
+    &-link{
+        color: $text-color;
+        padding-bottom: 15px;
+        font-size: 16px;
+        line-height: calc(22 / 16);
+    }
+    &-newsletter{
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: calc(22 / 16);
+    }
+    &-divided{
+        margin-top: 84px;
+        margin-bottom: 22px;
+        opacity: 0.6;
+        border-top: 1px solid $text-color;
+    }
+    &-coppyright{
+        display: flex;
+        flex-flow: row nowrap; /* Align on the same line */
+        justify-content: space-between;
+        &-text{
+            font-size: 14px;
+            line-height: calc(19 / 14);
+        }
+        margin-bottom: 22px;
+    }
+    &-coppyright-text a{
+        color: $text-color;
+    }
+    .left{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 14px;
+    }
+    &-social{
+        display:flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+    @media (hover: hover){
+        .footer-link{
+            position: relative;
+            transition: all 0.2s linear;
+            &:hover {
+                background: linear-gradient(113.09deg, #F2D374 7.05%, #B88837 64.94%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                &:after {
+                  width: 100%;
+                  left: 0;
+                  right: auto;
+                }
+              }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &-image{
+            display: none !important;
+        }
+        .mobile{
+            display: none !important;
+        }
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .footer{
+        &-container{
+            grid-template-columns: 100%;
+            gap: 50px 0;
+            text-align: center;
+        }
+        &-information{
+            margin-top: 0;
+        }
+        &-image{
+            display: flex;
+            justify-content: center;
+        }
+        &-divided{
+            margin-top: 28px;
+        }
+    }
+    .useful-link{
+        display: none !important;
+    }
+    .tablet{
+        display: none !important;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        gap: 35px 0;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 767.98px) {
+    .footer{
+        transform: translateY(-50%);
+    }
+}
+@media screen  and (max-width: 500px) {
+    .footer{
+        transform: translateY(-20%);
+    }
+}
+.newsletter-input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 349px;
+    position: relative;
+}
+.newsletter-input{
+    .news-input{
+        background: #fff !important;
+        border-radius: 49px;
+        padding: 20px 0px;
+        
+    }
+    ::placeholder{
+        padding-left: 23px;
+        color: #E0E0E0;
+
+    }
+}
+.newsletter-submit{
+    position: absolute;
+    float: right;
+    right: 0;
+    padding: 13px 10px 10px 0px;
+    width: 100%;
+    max-width: 100px;
+    max-height: 43px;
+    .news-submit{
+        background: linear-gradient(113.09deg, #F2D374 7.05%, #B88837 64.94%);
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        border:none;
+    }
+    ::placeholder{
+        padding: 12px;
+        color: $text-color;
+    }
+}
+

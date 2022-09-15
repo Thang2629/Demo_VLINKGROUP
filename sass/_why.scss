@@ -1,0 +1,99 @@
+.why{
+    padding: 0px 0px 100px;
+    // &-container{
+    //     display:flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     padding: 0px;
+    //     position: relative;
+    // }
+    &-heading{
+        font-size: 50px;
+        font-weight: 800;
+        line-height: calc(50 / 36);
+        margin-bottom: 56px;
+        text-align: center;
+    }
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0 24px;
+    }
+    &-item{
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(200px);
+        border-radius: 18px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-image img{
+        margin: 0 0 27px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(30 / 20);
+        margin-bottom: 12px;
+    }
+    &-desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(24 / 16);
+        color: #B6B6B6;
+        display: flex;
+    }
+    &-button{
+        padding: 0px;
+        gap: 10px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &-button-area{
+        margin-top: auto;
+    }
+    @media screen and (max-width: 480px) {
+        &-heading{
+            font-size: 32px;
+            line-height: calc(36 / 32);
+            margin-bottom: 28px;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        &-heading{
+            font-size: 45px;
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .why{
+        padding: 0;
+    }
+    .slick-dots{
+        justify-content: center;
+        margin-top: 38px;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 767px) {
+    .why{
+        transform: translateY(-80%);
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 500px) {
+    .why{
+        transform: translateY(-40%);
+    }
+}
+@media screen and (min-width: 340px) and (max-width: 380px) {
+    .why{
+        transform: translateY(-30%);
+    }
+}
+@media screen and (max-width: 339px) {
+    .why{
+        transform: translateY(-20%);
+    }
+}

@@ -1,0 +1,161 @@
+.contact{
+    background: #071B37;
+    background-image: url('../images/BG_contact.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    &-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 114px;
+        padding: 80px 0px 80px 0px;
+    }
+    @media screen and (max-width: 767px) {
+        &-container{
+            flex-direction: column;
+            padding: 32px 0 0;
+            gap: 20px 0;
+        }
+    }
+    
+    &-content{
+        width: 100%;
+        max-width: 610px;
+    }
+    &-heading{
+        font-size: 43px;
+        font-weight: 700;
+        line-height: calc(87 / 64);
+    }
+    &-desc{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: calc(32 / 24);
+        margin-top: 16px;
+        color: rgba(255, 251, 251, 0.65);
+    }
+    @media screen and (min-width: 1030px) and (max-width: 1279px) {
+        &-heading{
+            font-size: 36px;
+        }
+        &-desc{
+            font-size: 22px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1029px) {
+        &-container{
+            gap: 0 80px;
+            padding-top: 50px;
+            padding-bottom: 90px;
+        }
+        &-heading{
+            font-size: 26px;
+        }
+        &-desc{
+            font-size: 18px;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        &-heading{
+            font-size: 30px;
+        }
+        &-desc{
+            font-size: 17px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        &-heading{
+            font-size: 29px;
+        }
+        &-desc{
+            font-size: 15px;
+        }
+    }
+    &-form{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+    }
+    @media screen and (min-width: 500px ){
+        &-form{
+            width: 100%;
+            max-width: 610px;
+        }
+    }   
+    @media screen and (max-width: 767.98px) {
+        &-button{
+            justify-content: center !important;
+        }
+    }
+    
+}
+input, select,textarea{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(22 / 16);
+    color: #F2F2F2;
+    padding: 6px 0px 6px 0px;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #F2F2F2;
+    margin-right: 15px;
+    width: 100%;
+}
+
+.contact-row{
+    margin: 44px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#message{
+    width: 100%;
+}
+.successful{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.successful span{
+    color: black;
+}
+.successful span i{
+    font-size: 50px;
+}
+.successful span {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.notice-submit{
+    background: rgb(7, 30, 62);
+}
+.modal-header{
+    border: none ;
+}
+.modal-footer{
+    border: none ;
+}
+.modal-content{
+    border-radius: 1rem;
+}
+@media screen and (max-width: 500px) {
+    .contact{
+        transform: translateY(-20%);
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 570px) {
+    .contact{
+        transform: translateY(-60%);
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 767px) {
+    .contact{
+        transform: translateY(-50%);
+    }
+}

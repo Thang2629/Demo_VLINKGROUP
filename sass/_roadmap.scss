@@ -1,0 +1,78 @@
+.roadmap{
+    &-container{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &-heading{
+        font-size: 50px;
+        font-weight: 800;
+        line-height: calc(50 / 36);
+        text-align: center;
+    }
+    @media screen and (max-width: 480px) {
+        &-heading{
+            font-size: 32px;
+            line-height: calc(36 / 32);
+            margin-bottom: 28px;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        &-heading{
+            font-size: 45px;
+        }
+    }
+    &-line{
+        background: #B88837;
+        height: 1px;
+        width: 100%;
+    }
+    &-content{
+        background: linear-gradient(180deg, #071B37 0%, rgba(7, 27, 55, 0) 100%);
+    }
+    &-image{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .row{
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 767px) {
+    .roadmap{
+        transform: translateY(-100%);
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 640px) {
+    .roadmap{
+        transform: translateY(-120%);
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 575px) {
+    .roadmap{
+        transform: translateY(-140%);
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 500px) {
+    .roadmap{
+        transform: translateY(-80%);
+    }
+}
+@media screen and (min-width: 340px) and (max-width: 380px) {
+    .roadmap{
+        transform: translateY(-70%);
+    }
+}
+@media screen and (max-width: 339px) {
+    .roadmap{
+        transform: translateY(-60%);
+    }
+}
